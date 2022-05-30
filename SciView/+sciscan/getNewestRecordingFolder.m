@@ -6,7 +6,6 @@ function recordingPath = getNewestRecordingFolder(rootPath)
 
     % Use folder from today by default
     thisDateStr = datestr(now, 'yyyy_mm_dd');
-%     thisDateStr = '2020_06_04'; %NB: Be very careful when hardcoding this line
     
     % Combine rootPath with datefolder
     todayDir = fullfile(rootPath, thisDateStr);

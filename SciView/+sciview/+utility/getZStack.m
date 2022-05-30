@@ -12,7 +12,7 @@ function getZStack(recordingFolder, regOpt, logger) % todo: last input should be
 
     % Get default registration options
     
-    isZStack = sciview.assert.isRecordingXYTZ(recordingFolder);
+    isZStack = sciscan.isRecordingXYTZ(recordingFolder);
     logger.error('This is not a Z Stack recording')
     
     

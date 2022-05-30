@@ -1,0 +1,16 @@
+function initPath = getInitPath()
+%getInitPath Get init path for uiget
+    if ispc
+        switch getenv('username')
+            case 'labuser'  %OS2
+                initPath = 'E:\';
+            case 'Tekla'    %OS1
+                initPath = 'D:\';
+            otherwise
+                initPath = '';
+        end
+    else
+        initPath = '';
+    end
+    
+end
